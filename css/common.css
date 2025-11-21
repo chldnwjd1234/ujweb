@@ -28,7 +28,7 @@ body {
 
     /* ✨ 변수 모음 (색상, 글꼴, 크기 등) */
     :root {
-        font-size: 16px;
+        font-size: 20px;
         --header-height: 90px;
         --white-color: #fff;
         --pd-tb0-lr48: 0 48px;
@@ -37,17 +37,17 @@ body {
         --bg-Cdeep-color2: #424769;
         --bg-Cdeep-color3: #5E6A75;
         --bg-Cdeep-color4: #5E7571;
-        --primary-color: #fdb85f;
-        --primary-color-full: #F6B17A;
-        --point-color1: #7ABCF5;
-        --point-color2: #7AE3F5;
-        --point-color3: #947AF5;
-        --point-color4: #7AF57D;
-        --main-color: #0ea38a;
-        --main-color-deep: #03423d;
-        --sub-color1: #9AC8CD;
-        --sub-color2: #E1F7F5;
-        --color-rgba: rgba(253, 184, 95, 0.47);
+        --primary-color: #3a7ca5;
+        --primary-color-full: #4a9eff;
+        --point-color1: #2e5266;
+        --point-color2: #355c7d;
+        --point-color3: #4a6fa5;
+        --point-color4: #2b4162;
+        --main-color: #16425b;
+        --main-color-deep: #0d2538;
+        --sub-color1: #3e5c76;
+        --sub-color2: #546a7b;
+        --color-rgba: rgba(74, 158, 255, 0.47);
         --color-rgbaglass: rgba(253, 184, 95, 0.16);
         --eng-lang: "DM Serif Display", serif;
         --eng-lang2: "Maitree", serif;
@@ -56,14 +56,14 @@ body {
     /* ✨ 카드/패널 반투명 (글래스 효과) */
     .glass {
         background: linear-gradient(to bottom right,
-                rgba(45, 50, 80, 0.38),
-                rgba(45, 50, 80, 0.16));
+                rgba(10, 22, 40, 0.5),
+                rgba(26, 47, 71, 0.25));
         backdrop-filter: blur(12px) saturate(140%);
         -webkit-backdrop-filter: blur(12px) saturate(140%);
         box-shadow:
             0 10px 30px rgba(45, 50, 80, 0.12),
-            inset 0 0.5px 0 rgba(255, 179, 81, 0.6),
-            inset 0 -0.5px 0 rgba(253, 184, 95, 0.06);
+            inset 0 0.5px 0 rgba(58, 124, 165, 0.6),
+            inset 0 -0.5px 0 rgba(58, 124, 165, 0.06);
     }
 
     /* ✨ 바디 전체 배경 (그라디언트 + 노이즈) */
@@ -98,19 +98,19 @@ body {
         /* 로고 영역 */
         & h1 {
             height: 100%;
-            font-size: 1.5rem;
-            color: var(--primary-color-full);
-            text-shadow: 1px 1px 1px rgba(255, 255, 255, .5);
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #fff;
             font-family: var(--eng-lang2);
 
             & a {
                 display: flex;
                 height: 100%;
                 align-items: center;
-                gap: 0.8em;
+                gap: 0.3em;
 
                 & img {
-                    height: 56%;
+                    height: 40%;
                 }
             }
         }
@@ -161,7 +161,7 @@ body {
                         line-height: var(--header-height);
                         font-size: 1.1rem;
                         font-family: var(--eng-lang2);
-                        font-weight: 200;
+                        font-weight: 300;
 
                         /* 마우스 올리면 두꺼워짐 */
                         &:hover {
@@ -217,7 +217,7 @@ body {
 
                     &>a {
                         background: var(--color-rgba);
-                        border-radius: 10px 10px 0 0;
+                        /* border-radius: 10px 10px 0 0; */
                     }
                 }
             }
@@ -312,7 +312,7 @@ body {
             width: 200px;
             height: 200px;
             background: linear-gradient(to bottom right,
-                    rgba(52, 218, 190, 0.18),
+                    rgba(58, 124, 165, 0.25),
                     rgba(255, 255, 255, 0.05));
 
             &::before {
@@ -411,7 +411,7 @@ body {
                 border-radius: 8px;
                 margin-bottom: 10px;
                 border: 1px solid rgba(253, 184, 95, 0.15);
-                background: rgba(253, 184, 95, 0.35);
+                background: rgba(74, 158, 255, 0.35);
                 font-weight: 100;
             }
 
@@ -599,28 +599,28 @@ body {
 
                         /* 카드별 색상 */
                         &:nth-child(1)>div {
-                            background-color: #91a864;
+                            background-color: #2e5266;
                         }
 
                         &:nth-child(2)>div {
-                            background-color: #6aa864;
+                            background-color: #355c7d;
                         }
 
                         &:nth-child(3)>div {
-                            background-color: #64a887;
+                            background-color: #4a6fa5;
                         }
 
                         /* 카드 앞면 이미지 */
                         &:nth-child(1) .front {
-                            background-image: url(../img/sticky1.png);
+                            background-image: url(../img/st5.png);
                         }
 
                         &:nth-child(2) .front {
-                            background-image: url(../img/sticky2.png);
+                            background-image: url(../img/st6.png);
                         }
 
                         &:nth-child(3) .front {
-                            background-image: url(../img/sticky3.png);
+                            background-image: url(../img/st2.png);
                         }
 
                         /* 카드 뒷면 */
@@ -643,19 +643,19 @@ body {
                             transition: all 0.6s ease;
                             backdrop-filter: blur(8px);
                             transform: rotate(-2deg);
+                        }
 
-                            /* 아이콘별 이미지 */
-                            &:nth-child(1) {
-                                background-image: url(../img/icon1.png);
-                            }
+                        /* 아이콘별 이미지 - .icon 밖으로 빼기 */
+                        & .icon.icon1 {
+                            background-image: url(../img/ic1.png);
+                        }
 
-                            &:nth-child(2) {
-                                background-image: url(../img/icon2.png);
-                            }
+                        & .icon.icon2 {
+                            background-image: url(../img/ic2.png);
+                        }
 
-                            &:nth-child(3) {
-                                background-image: url(../img/icon3.png);
-                            }
+                        & .icon.icon3 {
+                            background-image: url(../img/ic3.png);
                         }
 
                         &:hover .icon {
@@ -828,12 +828,11 @@ body {
                         /* 이미지 박스 */
                         & .img_box {
                             width: 50%;
-                            height: 100%;
+                            height: 90%;
 
                             & img {
                                 width: 100%;
                                 height: 100%;
-                                object-fit: cover;
                             }
                         }
 
@@ -987,17 +986,17 @@ body {
 
                         /* 카드 배경 (이미지) */
                         &.sl1 {
-                            background-image: url(../img/sl1.png);
+                            background-image: url(../img/st4.png);
                             top: 0;
                         }
 
                         &.sl2 {
-                            background-image: url(../img/sl2.png);
+                            background-image: url(../img/st3.png);
                             top: 20vh;
                         }
 
                         &.sl3 {
-                            background-image: url(../img/sl3.png);
+                            background-image: url(../img/st7.png);
                             top: 40vh;
                         }
 
@@ -1035,13 +1034,11 @@ body {
      ============================= */
         footer {
             width: 100%;
-            height: 60vh;
+            height: 80vh;
+            padding: 120px 48px;
             background: radial-gradient(circle at top right,
                     var(--primary-color) 0%,
-                    /* 🧒 주황색 느낌 */
-                    var(--main-color-deep) 30%
-                    /* 🧒 어두운 블랙톤 */
-                );
+                    var(--main-color-deep) 30%);
             color: #fff;
             display: flex;
             flex-direction: column;
@@ -1049,22 +1046,45 @@ body {
             justify-content: center;
             overflow: hidden;
             text-align: center;
+            gap: 30px;
 
             & h3 {
-                font-size: 2rem;
-                margin-bottom: 20px;
-                color: var(--sub-color2);
-                /* 🧒 서브컬러 */
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: var(--primary-color-full);
+                letter-spacing: 3px;
             }
 
             & p {
-                font-size: 4rem;
-                line-height: 1.3;
+                font-size: 3.2rem;
+                line-height: 1.5;
                 font-weight: 600;
 
                 & span {
-                    font-weight: 300;
-                    /* 🧒 얇은 텍스트 */
+                    color: var(--primary-color-full);
+                }
+            }
+
+            & .contact-links {
+                display: flex;
+                gap: 40px;
+                margin-top: 40px;
+
+                & a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: var(--sub-color2);
+                    font-size: 1.1rem;
+                    transition: color 0.3s ease;
+
+                    & i {
+                        font-size: 1.2rem;
+                    }
+
+                    &:hover {
+                        color: var(--white-color);
+                    }
                 }
             }
         }
