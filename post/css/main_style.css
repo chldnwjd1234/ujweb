@@ -104,7 +104,7 @@ header .inner {
 header h1 {
     display: block;
     width: 186px;
-    height: 10px;
+    height: 40px;
     background: url(../img/logo.png) no-repeat;
     text-indent: -9999px;
 }
@@ -126,8 +126,6 @@ header nav ul.gnb>li {
     position: relative;
 }
 
-
-
 header nav ul.gnb>li>a {
     display: flex;
     min-width: 120px;
@@ -138,11 +136,6 @@ header nav ul.gnb>li>a {
     font-weight: 500;
     padding: 38px;
 }
-
-header nav ul.gnb>li>a:hover {
-    color: var(--red);
-}
-
 
 header nav ul.gnb>li>ul.sub {
     position: absolute;
@@ -173,7 +166,7 @@ header nav ul.gnb>li>ul.sub li a {
 }
 
 header nav ul.gnb>li>ul.sub li a:hover {
-    color: var(--red)
+    color: #ED3024;
 }
 
 header .right {
@@ -347,10 +340,6 @@ header .container .all_con ul.list>li>ul {
     font-size: 16px;
 }
 
-header .container .all_con ul.list>li>ul a:hover{
-    color: var(--red);
-}
-
 
 main {
     width: 100%;
@@ -427,7 +416,7 @@ main .mian_visual .slide_visual .txt_area {
     color: #fff;
 }
 
-.mian_visual .tit p:first-child {
+.mian_visual .tit p:first-child{
     color: var(--red);
 }
 
@@ -475,7 +464,7 @@ main .mian_visual .pager button {
 }
 
 main .mian_visual .pager button:hover {
-    color: var(--red);
+    color: var(--black);
 }
 
 main .mian_visual .pager .box {
@@ -776,39 +765,26 @@ main .mian_visual .pager .btn_box .fa-play {
     height: 1100px;
     border-radius: 50%;
 }
-
-.motion .circle_box img {
+.motion .circle_box img{
     position: absolute;
     right: -35%;
     top: -42%;
     width: 380px;
     height: 230px;
-    animation: flow linear infinite 5s;
+    animation:  flow linear infinite 5s;
 }
 
 
 
-@keyframes flow {
-    0% {
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 1;
-    }
-
-    80% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        right: 36%;
-    }
+@keyframes flow{
+    0%{opacity: 0;}
+    10%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity: 0; right: 36%;}
 }
 
 .circle1 {
-    background: radial-gradient(50% 50% at 50% 50%, #f79e55 15.35%, #F48120 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #b65e16 15.35%, #F48120 100%);
     width: 80%;
     height: 80%;
     position: absolute;
@@ -817,12 +793,13 @@ main .mian_visual .pager .btn_box .fa-play {
     margin-left: -40%;
     margin-top: -40%;
     border-radius: 50%;
+    box-shadow: 10px 10px 30px 20px rgba(22, 5, 105, .3);
     animation: rotateCircle 7s infinite;
     transform-origin: 45% 50%;
 }
 
 .circle2 {
-    background: radial-gradient(50% 50% at 50% 50%, #ffd15e 15.35%, #FCB913 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #FCB913 15.35%, #FCB913 100%);
     width: 50%;
     height: 50%;
     position: absolute;
@@ -831,6 +808,7 @@ main .mian_visual .pager .btn_box .fa-play {
     margin-left: -25%;
     margin-top: -25%;
     border-radius: 50%;
+    box-shadow: 10px 10px 30px 20px rgba(22, 5, 105, .3);
     animation: rotateCircle 7s infinite;
     transform-origin: 35% 50%;
 }
@@ -1009,8 +987,7 @@ main .mian_visual .pager .btn_box .fa-play {
 }
 
 .con .inner a.more:hover {
-    background: var(--red);
-    color: #fff;
+    border-color: var(--gray-03);
 }
 
 .customer .slide_wrap {
@@ -1198,25 +1175,24 @@ main .mian_visual .pager .btn_box .fa-play {
 }
 
 .kpssa_mark .inner a .txt_box p {
-    font-size: 44px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 16px;
 }
 
 .kpssa_mark .inner a .txt_box p em {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
     display: block;
     color: var(--gray-00);
 }
 
 .kpssa_mark .inner a .txt_box span {
-    color: var(--gray-00);
-    font-size: 20px;
+    color: var(--gray-02);
     line-height: 1.5;
     letter-spacing: -.5px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .kpssa_mark .inner a .img_box {
@@ -1224,12 +1200,6 @@ main .mian_visual .pager .btn_box .fa-play {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 45px;
-}
-
-.kpssa_mark .inner a .img_box img {
-    width: 100px;
-    height: 100px;
 }
 
 .kpssa_mark .inner a .img_box::after {
@@ -1247,7 +1217,6 @@ main .mian_visual .pager .btn_box .fa-play {
 
 .kpssa_mark .inner a .img_box img:nth-child(2) {
     order: 3;
-    margin-right: 75px;
 }
 
 .contact {
@@ -1413,6 +1382,11 @@ footer .btn_box {
 }
 
 
+
+.selcet_box ul li:nth-child(6) {
+    border-bottom: 1px solid #2a2a2a;
+}
+
 .selcet_box ul li a {
     display: flex;
     width: 100%;
@@ -1442,7 +1416,7 @@ footer .btn_box {
 
 footer .btn_box a,
 .selcet_box button {
-    border: 1px solid var(--gray-02);
+    border: 1px solid var(--gray-06);
     transition: .2s;
 }
 
@@ -1450,10 +1424,6 @@ footer .btn_box a:hover,
 .selcet_box button:hover {
     background: var(--red);
     color: #fff;
-}
-
-.selcet_box button li {
-    border: 1px solid red;
 }
 
 footer .f_bottom {
