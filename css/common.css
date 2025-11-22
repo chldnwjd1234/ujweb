@@ -75,11 +75,8 @@ body {
             position: fixed;
             inset: 0;
             z-index: -1;
-            background:
-                radial-gradient(1200px 600px at 10% -10%, #ffffff 0%, transparent 60%),
-                radial-gradient(900px 700px at 110% 10%, #f6f7fb 0%, transparent 60%),
-                linear-gradient(120deg, #f7f8fc 0%, #ffffff 50%, #f5f8ff 100%);
-            background-blend-mode: overlay;
+            background: #000a09;
+            /* 어두운 배경으로 변경 */
         }
     }
 
